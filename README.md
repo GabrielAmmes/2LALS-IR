@@ -3,19 +3,19 @@
  
 ## BUILD 2LALS-IR
 ```
- make
+make
 ```
 ## BUILD ESPRESSO
 ```
- cd espresso
- make 
- cd ..
+cd espresso
+make 
+cd ..
  ```
 
 ## RUNNING
 ### MAIN COMMAND
 ```
-	./main -t 0 -i PATH -o PATH -[en|er] ERROR
+./main -t 0 -i PATH -o PATH -[en|er] ERROR
 ```
 
  - -i - Input Path
@@ -25,27 +25,27 @@
 
 ### EXAMPLE
 ```
- ./main -t 0 -i data/iwls/sao2.pla -o app/ -er 5
- ```
+./main -t 0 -i data/iwls/sao2.pla -o app/ -er 5
+```
  Approximate the sao2.pla benchmark with 5% ER threshold and stores in app folder.
 
  ### OTHER COMMANDS
  #### Literal Count:
- ```
-	 ./main -t 1 -i PATH
-  ```
+```
+./main -t 1 -i PATH
+```
  #### Cubes Count:
- ```
-	 ./main -t 2 -i PATH
-  ```
+```
+./main -t 2 -i PATH
+```
  #### Error Rate Count:
- ```
-	 ./main -t 3 -i PATH -o PATH
-  ```
+```
+./main -t 3 -i PATH -o PATH
+```
  #### Help:
- ```
- ./main -h
- ```
+```
+./main -h
+```
  
  ### SCRIPTS
  run_table1.sh: Execute the method on benchmarks in folder benchmarks/iwls/ with a fixed EN of 16 and stores the approximated circuits in app/table1. Results presented on paper's Table 1.
